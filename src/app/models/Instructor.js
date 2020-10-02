@@ -10,7 +10,7 @@ module.exports = {
     GROUP BY instructors.id
     ORDER BY total_students DESC`, function(err, results){
       if(err) throw `Database Error! ${err}`
-
+      
       callback(results.rows)
     })
   },
